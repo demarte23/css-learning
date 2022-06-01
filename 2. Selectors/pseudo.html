@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        /* unvisited link */
+        a:link {
+            color: #ff0000;
+        }
+
+        /* visited link */
+        a:visited {
+            color: #00ff00;
+        }
+
+        /* mouse over link */
+        a:hover {
+            color: #ff00ff;
+        }
+
+        /* selected link */
+        a:active {
+            color: #0000ff;
+        }
+        
+        li:first-child {
+            background-color: violet;
+        }
+        
+        li:last-child {
+            background-color: blueviolet;
+        }
+
+        li:nth-child(5) {
+            background-color: darkgreen;
+        }
+        li:nth-child(n + 7) {
+            background-color: cadetblue;
+        }
+        li:nth-child(even) {
+            background-color: coral;
+        }
+        div::before {
+            content: "before-->";
+        }
+        div::after {
+            content: "<--after";
+        }
+    </style>
+</head>
+<a href="fireball.de">F!REIT</a><br>
+<a href="fireball.de">F!REIT</a><br>
+<a href="https://search.mdosch.de/">searX.de</a><br>
+<a href="https://www.gruble.de">gRublE</a><br>
+
+<ol>
+    <li>Item</li>
+    <li>Item
+        <ol>
+            <li>Item</li>
+            <li>Item</li>
+            <li>Item</li>
+            <li>Item</li>
+        </ol>
+    </li>
+    <li>Item</li>
+    <li>Item</li>
+    <li>Item</li>
+    <li>Item</li>
+</ol>
+
+<div>
+    before
+
+    content
+
+    after
+</div>
+
+<body>
+
+</body>
+</html>
