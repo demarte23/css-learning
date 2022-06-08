@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        window.onload = function(){
+            var ifr = document.getElementById('MainPopupIframe');
+            ifr.onload=function(){
+                this.style.display='block';
+                console.log('laod the iframe')
+            };
+            var btn = document.getElementById('click');    
+            btn.onclick=function(){
+                ifr.src='https://fireball.de';    
+            };
+        };
+    </script>
+</head>
+<body>
+    <button id='click'>click me</button>
+    <iframe style="display:none" id='MainPopupIframe' src='' /></iframe>
+</body>
+</html>

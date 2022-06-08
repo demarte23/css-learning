@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Floats</title>
+    <style>
+        img {
+            float:right;
+        }
+        .clear {
+            clear: both;
+        }
+        .overflow {
+            width: 200px;
+            height: 50px;
+            background-color: springgreen;
+            overflow: hidden;
+        }
+        .box {
+            box-sizing: border-box;
+            width: 33.33%;
+            background-color: #eee;
+            float: left;
+            border: 5px solid black;
+        }
+    </style>
+</head>
+<body>
+    <p>
+        <img
+            src="./logo.png"
+            alt="Logo"
+        />
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet perferendis molestias doloribus amet, cum deserunt eaque, molestiae, facilis iure nesciunt ducimus esse similique? Illum dolor beatae nemo adipisci temporibus soluta.
+        <p class="clear">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic fugiat officiis repudiandae inventore amet ipsam suscipit saepe tenetur minima. Unde id nobis eius necessitatibus facilis voluptatibus cupiditate recusandae odio. Dolor!
+        </p>
+        <div class="overflow">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic fugiat officiis repudiandae inventore amet ipsam suscipit saepe tenetur minima. Unde id nobis eius necessitatibus facilis voluptatibus cupiditate recusandae odio. Dolor!
+        </div>
+
+        <div class="box">box1</div>
+        <div class="box">box2</div>
+        <div class="box">box3</div>
+    </p>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1.Forms</title>
+    <style>
+        input[type="text"] {
+            width: 100%;
+            padding: 12px 20px;
+            border-radius: 5px
+        }
+        input:focus {
+            background-color: lightblue;
+        }
+        input[type="submit"] {
+            display: inline-block;
+            padding: 0.35em 1.2em;
+            border: 0.1em solid #ffffff;
+            margin: 0 0.3em 0.3em 0;
+            border-sizing: border-box;
+            text-decoration: none;
+            font-family: "Roboto", sans-serif;
+            font-weight: 300;
+            color: #3e146a;
+            text-align: center;
+            transition: all 0.2s;
+        }
+        a.button1:hover{
+            color: #000000;
+            background-color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <p>
+            <label
+                >name
+                <input type="text" name="customer_name" required/>
+            </label>
+        </p>
+        <p>
+            <label
+                >Numer
+                <input type="tel" name="phone_number" />
+            </label>
+        </p>
+        <p>
+            <label
+                >EMail
+                <input type="email" name="email_address" />
+            </label>
+        </p>
+        <p>
+            <label
+                >Special Instructions
+                <textarea name="comments" maxlength="500"></textarea>>
+            </label>
+        </p>
+        <p><input type="submit" value="Submit me"></input></p>
+    </form>
+    <a href="https://codepen.io/vladracoare/pen/jOPmMap">SomeExamples</a>
+    <a href="https://codepen.io/nicolasjengler/pen/PJKqby">SomeExamples</a>
+</body>
+</html>
